@@ -2,26 +2,20 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const mongodb = require("mongodb");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+
 //const URL = "mongodb+srv://tejas:Tejas11@cluster0.vpuuy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const URL = "mongodb+srv://shivakumar:Test1234@cluster0.kot9grj.mongodb.net/?retryWrites=true&w=majority";
+const URL = "mongodb+srv://shivakumar:Test1234@cluster0.kot9grj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 //const URL = "mongodb+srv://shivakumark:Test1234@cluster0.kot9grj.mongodb.net/?retryWrites=true&w=majority";
 //const URL = "mongodb://127.0.0.1:27017/hiring"
 const DB = "hiring";
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
 
 
 
 
 app.use(cors())
 app.use(express.json());
-
-
-
-
-
-
-
 
 
 
